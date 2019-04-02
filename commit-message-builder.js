@@ -12,8 +12,22 @@ var questions = [
     pageSize: Infinity,
     name: 'type',
     message: 'type',
-    choices: ['fix', 'chore', 'style', 'test', 'build', 'docs', 'refactor', new inquirer.Separator(), 'perf', 'revert',  'feat', 'wip', ],
+    choices: [
+      '🐞 fix',
+      '✍️ chore',
+      '👗 style',
+      '🚚 build',
+      '📝 docs',
+      '🔨 refactor',
+      new inquirer.Separator(),
+      '🐎 perf',
+      '⏪ revert',
+      '😱 test',
+      '🌈 feat',
+      '🤔 wip',
+    ],
     filter: function(val) {
+      console.log(val);
       return val.toLowerCase();
     }
   },
