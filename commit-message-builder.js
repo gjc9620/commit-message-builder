@@ -1,11 +1,6 @@
 const inquirer = require('inquirer');
 const { exec } = require('child_process');
 
-
-console.log('Have a nice day!');
-
-// type(scope?): subject
-
 var questions = [
   {
     type: 'rawlist',
