@@ -20,7 +20,7 @@ var questions = [
       '📝  docs',
       '🔨  refactor',
       new inquirer.Separator(),
-      '🐎  perf',
+      '🚀  perf',
       '⏪  revert',
       '😱  test',
       '🌈  feat',
@@ -60,6 +60,6 @@ inquirer.prompt(questions).then(answers => {
     // the *entire* stdout and stderr (buffered)
     console.log(`stdout: ${stdout}`);
     console.log(`stderr: ${stderr}`);
-    console.log('Have a nice day!');
+    console.log('Have a nice day!😀');
   });
 });
