@@ -1,6 +1,6 @@
 {
   "name": "commit-message-builder",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "commit-message-builder.js",
   "scripts": {
