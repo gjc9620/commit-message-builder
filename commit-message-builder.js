@@ -13,18 +13,18 @@ var questions = [
     name: 'type',
     message: 'type',
     choices: [
-      '🐞 fix',
-      '✍️ chore',
-      '👗 style',
-      '🚚 build',
-      '📝 docs',
-      '🔨 refactor',
+      '🐞  fix',
+      '🛠  chore',
+      '👗  style',
+      '🚚  build',
+      '📝  docs',
+      '🔨  refactor',
       new inquirer.Separator(),
-      '🐎 perf',
-      '⏪ revert',
-      '😱 test',
-      '🌈 feat',
-      '🤔 wip',
+      '🐎  perf',
+      '⏪  revert',
+      '😱  test',
+      '🌈  feat',
+      '🤔  wip',
     ],
     filter: function(val) {
       console.log(val);
@@ -50,7 +50,7 @@ inquirer.prompt(questions).then(answers => {
     subject,
   } = answers;
   
-  exec(`git commit -m "${type}(${scope}): ${subject}"`, (err, stdout, stderr) => {
+  exec(`git commit -m "${type.replace(/.* {2}/,'')}(${scope}): ${subject}"`, (err, stdout, stderr) => {
     if (err) {
       // node couldn't execute the command
       console.log(err);
@@ -60,5 +60,6 @@ inquirer.prompt(questions).then(answers => {
     // the *entire* stdout and stderr (buffered)
     console.log(`stdout: ${stdout}`);
     console.log(`stderr: ${stderr}`);
+    console.log('Have a nice day!');
   });
 });
