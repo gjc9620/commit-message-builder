@@ -2,7 +2,7 @@
 yeah
 
 
-## How to install 
+## How to install
 
 ```
 
@@ -12,3 +12,5 @@ npx commit-message-builder
 
 ```
 
+
+<img src="./show.gif" alt="err"/>
