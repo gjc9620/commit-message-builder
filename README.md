@@ -7,8 +7,15 @@ yeah
 ```
 
 npm install -g npx
-git add .
 npx commit-message-builder
+alias gcmb="npx commit-message-builder"
+
+```
+## How to use
+
+``` 
+git add .
+gcmb
 
 ```
 
