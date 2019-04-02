@@ -8,10 +8,11 @@ console.log('Have a nice day!');
 
 var questions = [
   {
-    type: 'list',
+    type: 'rawlist',
+    pageSize: Infinity,
     name: 'type',
     message: 'type',
-    choices: ['feat', 'fix', 'docs', 'style', 'refactor', 'perf', 'test', 'build', 'chore', 'revert', 'wip'],
+    choices: ['fix', 'chore', 'style', 'test', 'build', 'docs', 'refactor', new inquirer.Separator(), 'perf', 'revert',  'feat', 'wip', ],
     filter: function(val) {
       return val.toLowerCase();
     }
