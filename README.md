@@ -8,9 +8,17 @@ yeah
 
 npm install -g npx
 npx commit-message-builder
-alias gcmb="npx commit-message-builder"
+alias cmb="npx commit-message-builder"
+
+//or
+
+npm install -g commit-message-builder
+lias cmb="commit-message-builder"
+
 
 ```
+
+
 ## How to use
 
 ``` 
